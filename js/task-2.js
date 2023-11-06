@@ -9,10 +9,10 @@ function calcAverageCalories(days) {
 
   const averageNumberOfCalories = allCalories / days.length;
 
-  if (allCalories <= 0) {
-    return allCalories;
-  } else {
+  if (allCalories > 0) {
     return averageNumberOfCalories;
+  } else {
+    return allCalories;
   }
 }
 
